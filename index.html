@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub Repo Viewer</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    input { padding: 5px; }
+    button { padding: 6px 10px; margin-left: 5px; }
+    pre { background: #f4f4f4; padding: 10px; }
+    .error { color: red; }
+  </style>
+</head>
+<body>
+
+  <h2>GitHub Repository Finder</h2>
+
+  <input id="username" type="text" placeholder="GitHub user ID" />
+  <button onclick="getReposPromise()">Submit</button>
+
+  <p id="message"></p>
+  <pre id="output"></pre>
+
+  <script src="fetch-async.js"></script>
+  <script src="fetch-promise.js"></script>
+</body>
+</html>
