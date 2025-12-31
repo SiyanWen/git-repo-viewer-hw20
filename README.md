@@ -1,3 +1,4 @@
+# Github Repository Viewer
 Demo of using 2 async approach of JavaScript to call github API to get repositories of given user id.
 
 1.  Create an **HTML page**
@@ -28,3 +29,6 @@ You can switch which function is called by changing:
 // Promise (.then / .catch) Approach
 <button onclick="getReposPromise()">Submit</button>
 ```
+- The GitHub API is accessed asynchronously using `fetch()`, which returns a Promise.  
+- This prevents the browser UI thread from being blocked while waiting for the network response.  
+- The async/await approach makes asynchronous code easier to read, while the Promise chaining approach demonstrates the underlying mechanism.
