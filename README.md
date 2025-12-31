@@ -31,4 +31,5 @@ You can switch which function is called by changing:
 ```
 - The GitHub API is accessed asynchronously using `fetch()`, which returns a Promise.  
 - This prevents the browser UI thread from being blocked while waiting for the network response.  
-- The async/await approach makes asynchronous code easier to read, while the Promise chaining approach demonstrates the underlying mechanism.
+- The `async/await` approach makes asynchronous code easier to read, while the Promise chaining approach demonstrates the underlying mechanism.
+- Errors are handled using `try/catch` or `.catch()`.
